@@ -31,6 +31,7 @@ export function useFetch(url, slice, amount) {
                     setErrorMessage(`ERROR ❌\n
                         Status Code: ${response.status}
                         \nStatus Message: ${response.statusText}`);
+                        break;
             }
             
             

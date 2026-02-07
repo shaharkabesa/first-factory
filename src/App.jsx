@@ -4,6 +4,7 @@ import './index.css'
 import Navbar from './components/navbar'
 import { Route, Routes } from 'react-router-dom'
 import Details from './components/details'
+import Blog from './components/blog'
 function App() {
  
   return (
@@ -14,6 +15,7 @@ function App() {
         <Route path="/" ></Route>
         <Route path='/worker' element={<Worker />}></Route>
         <Route path='/worker/details/:id' element={<Details/>}></Route>
+        <Route path='/blog' element={<Blog/>}></Route>
       </Routes>
       
       
