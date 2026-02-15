@@ -7,7 +7,7 @@ import { useFetch } from "../customHooks/useFetch";
 function Details() {
     const {id} = useParams();
     
-   const {data, error, errorMessage} = useFetch(`https://jsonplaceholder.typicode.com/todos/${id}`)
+    const {data, error, errorMessage} = useFetch(`https://jsonplaceholder.typicode.com/todos/${id}`)
 
    
     return (
