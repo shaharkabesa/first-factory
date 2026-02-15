@@ -12,7 +12,7 @@ function Blog() {
              {data.length > 0 ? <h1 className="p-4">Data Loaded Succesfully ✅</h1> : ""}
          <div className="container_card flex gap-4 ">
             {data.length > 0 ? data.map((blog) => {
-                return (<Blogcard key={blog.id} blogid={blog.id} author={blog.Author} details={blog.Details}  />)
+                return (<Blogcard key={blog.blog_id} blogid={blog.blog_id} author={blog.author_name} details={blog.details}  />)
             })  : ""}
             
          </div>
