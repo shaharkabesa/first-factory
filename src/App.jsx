@@ -5,6 +5,7 @@ import Navbar from './components/navbar'
 import { Route, Routes } from 'react-router-dom'
 import Details from './components/details'
 import Blog from './components/blog'
+import Blogpage from './components/Blogpage'
 function App() {
  
   return (
@@ -16,8 +17,9 @@ function App() {
         <Route path='/worker' element={<Worker />}></Route>
         <Route path='/worker/details/:id' element={<Details/>}></Route>
         <Route path='/blog' element={<Blog/>}></Route>
+        <Route path='/blog/:id' element={<Blogpage/>}></Route>
       </Routes>
-      
+    
       
       </div>
  
