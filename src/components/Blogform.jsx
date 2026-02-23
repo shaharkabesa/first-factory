@@ -5,7 +5,7 @@ import { usePost } from "../customHooks/usePost";
 function Blogform(props) {
     const [author,setAuthor] = useState("");
     const [details,setDetails] = useState("");
-
+    
     const object = {
         "Author": author,
         "Details": details
