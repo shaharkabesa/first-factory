@@ -1,3 +1,4 @@
+import { Link } from "react-router-dom";
 import useDelete from "../customHooks/useDelete";
 
 
@@ -10,8 +11,8 @@ function Blogcard(props) {
             <h1 className="p-4 bg-white text-black">Author ID: {props.blogid}</h1>
             <h1 className="p-4 bg-white text-black">Author Name: {props.author}</h1>
             <p className="p-4 bg-white text-black" >Blog Details {props.details}</p>
-            <button className="p-4 bg-white text-black rounded-sm hover:scale-102 duration-105 hover:font-semibold">Read more...</button>
-            <button onClick={(e) => deleteData(e)} className="bg-black text-white">Delete</button>
+            <Link to={`${props.blogid}`} className="p-4 bg-white text-black rounded-sm hover:scale-102 duration-105 hover:font-semibold">Read more...</Link>
+            <button to={`/${props.blogid}`} onClick={(e) => deleteData(e)} className="bg-black text-white">Delete</button>
         </div>
     )
 }

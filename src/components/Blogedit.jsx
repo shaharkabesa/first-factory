@@ -4,7 +4,7 @@ function Blogedit(props) {
     const [author, setAuthor] = useState("");
     const [details, setDetails] = useState("");
     return (
-        <div>
+        <div className="absolute top-[20%] h-[50%] bg-white">
             <input type="text" placeholder={props.author} onChange={(e)=> {
                 setAuthor(e.target.value);
             }} />
@@ -14,3 +14,5 @@ function Blogedit(props) {
         </div>
     )
 }
+
+export default Blogedit;

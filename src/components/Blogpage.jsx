@@ -1,6 +1,7 @@
 import {useFetcher, useParams} from "react-router-dom"
 import { useFetch } from "../customHooks/useFetch";
 import { useEffect } from "react";
+import Blogedit from "./Blogedit";
 
 
 function Blogpage() {
@@ -11,7 +12,7 @@ function Blogpage() {
 
 
     return (
-        <div className="h-[90vh]  w-full flex flex-col bg-white items-center">
+        <div className="h-[90vh] relative  w-full flex flex-col bg-white items-center">
             <div className="p-4 bg-black w-full text-center drop-shadow-black drop-shadow-lg">
                 <h1 className="text-2xl text-white">{data.length  > 0 ? <h1>{data[0].author_name}</h1> : ""} </h1>
             </div>
@@ -24,6 +25,8 @@ function Blogpage() {
             <button className="p-4 m-2 hover:bg-black hover:text-white duration-150 rounded-md border-black text-md font-bold border-1">Edit</button>
             <button className="p-4 m-2 hover:bg-black hover:text-white duration-150 rounded-md border-black text-md font-bold border-1">Delete</button>
             </div>
+
+            <Blogedit />
             
             
             </div>
